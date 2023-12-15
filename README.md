@@ -1,0 +1,1 @@
+https://github.com/qwertykillme/slozhno-sosredotochitsya.git
