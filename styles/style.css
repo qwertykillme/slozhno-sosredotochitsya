@@ -40,6 +40,7 @@ a:focus-visible {
 
 .decorated-zone {
   position: relative;
+  padding: clamp(0.625rem, 2.545vw + 0.029rem, 1.25rem);
 }
 
 .decorated-zone::before {
@@ -82,11 +83,10 @@ a:focus-visible {
 .header__theme-menu-button {
   padding: 3px 12px;
   font-family: var(--main_font);
-  text-align: center;
   line-height: 18px;
+  text-align: center;
   text-transform: lowercase;
   color: var(--button_colour);
-  text-align: center;
   font-size: 18px;
   border: 1px solid var(--button_colour);
   border-color: transparent;
@@ -122,6 +122,7 @@ a:focus-visible {
   font-style: normal;
   font-weight: 700;
   line-height: 82.5%;
+  transform: translateX(-20px);
 }
 
 .header_description {
@@ -136,13 +137,20 @@ a:focus-visible {
   line-height: 23.4px;
 }
 
+.header_decoration {
+  position: absolute;
+  inset-block-start: clamp(0.625rem, 2.545vw + 0.029rem, 1.25rem);
+  inset-inline-end: clamp(0.625rem, 2.545vw + 0.029rem, 1.25rem);
+  block-size: 26px;
+  inline-size: 33px;
+}
+
 .header_decoration::before {
   position: absolute;
   content: "REC";
   color: var(--accent_colour);
   font-family: var(--main_font);
-  inset-block-start: clamp(0.625rem, 0.029rem + 2.545vw, 1.25rem);
-  inset-inline-end: clamp(2.375rem, 1.779rem + 2.545vw, 3rem);
+  inset-inline-end: 28px;
   block-size: 26px;
   inline-size: 33px;
   font-size: 18px;
@@ -154,8 +162,8 @@ a:focus-visible {
   content: "";
   block-size: 9px;
   inline-size: 9px;
-  inset-block-start: 28px;
-  inset-inline-end: 29px;
+  inset-block-start: 8px;
+  inset-inline-end: 9px;
   background-color: var(--accent_colour);
   border-radius: 50%;
   filter: drop-shadow(0px 0px 4px var(--accent_colour));
@@ -284,8 +292,8 @@ a:focus-visible {
 .gallery_img {
   object-fit: cover;
   object-position: center;
-  inline-size: 100%;
   block-size: 100%;
+  inline-size: 100%;
 }
 
 .sunset_img {
@@ -386,11 +394,7 @@ a:focus-visible {
 
   .header_title {
     font-size: clamp(7.25rem, 7.011rem + 1.018vw, 7.5rem);
-    margin-left: 10px;
-  }
-
-  .header_description {
-    margin-left: 10px;
+    transform: translateX(0px);
   }
 
   .section_grid {
