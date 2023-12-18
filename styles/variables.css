@@ -4,6 +4,7 @@
 */
 
 :root {
+  --padding_clamp: clamp(0.625rem, 2.545vw + 0.029rem, 1.25rem);
   --section_title_colour: #ff0070;
   --button_colour: #ff0070;
   --button_border: 1px solid rgba(255, 0, 112, 0.4);

@@ -5,6 +5,7 @@
 */
 
 .page.theme_light {
+  --padding_clamp: clamp(0.625rem, 2.545vw + 0.029rem, 1.25rem);
   --section_title_colour: #353430;
   --button_colour: #353430;
   --button_border: 1px solid rgba(50, 49, 45, 0.4);
@@ -27,6 +28,7 @@
 
 @media (prefers-color-sceme: light) {
   :root {
+    --padding_clamp: clamp(0.625rem, 2.545vw + 0.029rem, 1.25rem);
     --section_title_colour: #353430;
     --button_colour: #353430;
     --button_border: 1px solid rgba(50, 49, 45, 0.4);

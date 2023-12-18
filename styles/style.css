@@ -22,7 +22,7 @@ a:focus-visible {
 
 .header {
   height: 768px;
-  padding: clamp(0.625rem, 2.545vw + 0.029rem, 1.25rem);
+  padding: var(--padding_clamp);
   padding-left: 0px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -40,7 +40,7 @@ a:focus-visible {
 
 .decorated-zone {
   position: relative;
-  padding: clamp(0.625rem, 2.545vw + 0.029rem, 1.25rem);
+  padding: var(--padding_clamp);
 }
 
 .decorated-zone::before {
@@ -48,8 +48,8 @@ a:focus-visible {
   position: absolute;
   block-size: 25px;
   inline-size: 25px;
-  inset-block-start: clamp(0.625rem, 2.545vw + 0.029rem, 1.25rem);
-  inset-inline-end: clamp(0.625rem, 2.545vw + 0.029rem, 1.25rem);
+  inset-block-start: var(--padding_clamp);
+  inset-inline-end: var(--padding_clamp);
   border-block-start: 1px solid var(--accent_colour);
   border-inline-end: 1px solid var(--accent_colour);
 }
@@ -59,8 +59,8 @@ a:focus-visible {
   position: absolute;
   block-size: 25px;
   inline-size: 25px;
-  inset-block-end: clamp(0.625rem, 2.545vw + 0.029rem, 1.25rem);
-  inset-inline-start: clamp(0.625rem, 2.545vw + 0.029rem, 1.25rem);
+  inset-block-end: var(--padding_clamp);
+  inset-inline-start: var(--padding_clamp);
   border-block-end: 1px solid var(--accent_colour);
   border-inline-start: 1px solid var(--accent_colour);
 }
@@ -73,7 +73,6 @@ a:focus-visible {
 }
 
 .header__theme-menu-list {
-  margin-left: clamp(0.313rem, 1.272vw + 0.014rem, 0.625rem);
   display: flex;
   justify-content: center;
   gap: 11px;
@@ -139,8 +138,8 @@ a:focus-visible {
 
 .header_decoration {
   position: absolute;
-  inset-block-start: clamp(0.625rem, 2.545vw + 0.029rem, 1.25rem);
-  inset-inline-end: clamp(0.625rem, 2.545vw + 0.029rem, 1.25rem);
+  inset-block-start: var(--padding_clamp);
+  inset-inline-end: var(--padding_clamp);
   block-size: 26px;
   inline-size: 33px;
 }
@@ -186,8 +185,8 @@ a:focus-visible {
     "section_title card_title"
     ". card_content";
 
-  padding-right: clamp(0.625rem, 2.545vw + 0.029rem, 1.25rem);
-  padding-left: clamp(0.625rem, 2.545vw + 0.029rem, 1.25rem);
+  padding-right: var(--padding_clamp);
+  padding-left: var(--padding_clamp);
 }
 
 .section_title {
@@ -230,8 +229,8 @@ a:focus-visible {
 
 .section_flex {
   margin-top: clamp(3.125rem, 7.634vw + 1.336rem, 5rem);
-  padding-right: clamp(0.625rem, 2.545vw + 0.029rem, 1.25rem);
-  padding-left: clamp(0.625rem, 2.545vw + 0.029rem, 1.25rem);
+  padding-right: var(--padding_clamp);
+  padding-left: var(--padding_clamp);
   display: flex;
   flex-direction: column;
 }
@@ -268,8 +267,8 @@ a:focus-visible {
 /* галлерея */
 
 .section_gallery {
-  padding-left: clamp(0.625rem, 2.545vw + 0.029rem, 1.25rem);
-  padding-right: clamp(0.625rem, 2.545vw + 0.029rem, 1.25rem);
+  padding-left: var(--padding_clamp);
+  padding-right: var(--padding_clamp);
 }
 
 .gallery {
@@ -286,7 +285,7 @@ a:focus-visible {
 
 .gallery_title {
   margin-top: clamp(3.125rem, 7.634vw + 1.336rem, 5rem);
-  margin-bottom: clamp(0.625rem, 2.545vw + 0.029rem, 1.25rem);
+  margin-bottom: var(--padding_clamp);
 }
 
 .gallery_img {
@@ -350,6 +349,7 @@ a:focus-visible {
     flex-direction: column;
     justify-content: center;
     align-items: end;
+    transform: translateX(10px);
   }
   .header__theme-menu-item {
     margin-right: 11px;
@@ -426,6 +426,7 @@ a:focus-visible {
     height: 667px;
   }
   .footer_title {
+    font-size: clamp(7.25rem, 7.011rem + 1.018vw, 7.5rem);
     margin-left: 4px;
   }
 }
