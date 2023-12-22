@@ -1,8 +1,3 @@
-/*
-  Переменные для вашего проекта
-  и их переопределение под различные устройства
-*/
-
 :root {
   --padding_clamp: clamp(0.625rem, 2.545vw + 0.029rem, 1.25rem);
   --section_title_colour: #ff0070;
@@ -13,6 +8,6 @@
   --accent_colour: #ff0070;
   --accent_colour_font: #000028;
   --section_font_colour: #f1b2ce;
-  --main_font: IBM Plex Mono;
-  --background_color: #000028;
+  --main_font: "IBM Plex Mono";
+  --fallback_font: "Monospace";
 }

@@ -1,11 +1,4 @@
-/*
-  Специально для тёмной темы при наличии класса,
-  здесь окажутся стили, которые нужно переопределить принудительно,
-  переключая тему
-*/
-
 .page.theme_dark {
-  --padding_clamp: clamp(0.625rem, 2.545vw + 0.029rem, 1.25rem);
   --section_title_colour: #ff0070;
   --button_colour: #ff0070;
   --button_border: 1px solid rgba(255, 0, 112, 0.4);
@@ -14,10 +7,4 @@
   --accent_colour: #ff0070;
   --accent_colour_font: #000028;
   --section_font_colour: #f1b2ce;
-  --main_font: IBM Plex Mono;
-  --background_color: #000028;
-  /* сохраните этот селектор в приведённом виде.
-    Так стили написанные ниже будут иметь больший вес,
-    чем стили в медиазапросе предпочтений пользователя
-  */
 }
